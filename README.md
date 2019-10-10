@@ -1,5 +1,9 @@
 前面看了一下swift 5, 顺便正好看一下kotlin
 
+Quick
+- [Basic Syntax - Kotlin Programming Language](https://kotlinlang.org/docs/reference/basic-syntax.html)
+- [Classes and Inheritance - Kotlin Programming Language](https://kotlinlang.org/docs/reference/classes.html)
+
 ## 安装
 ```
 $ sdk install kotlin
@@ -106,6 +110,10 @@ val c: Int  // Type required when no initializer is provided
 c = 3       // deferred assignment
 ```
 
+var & val
+- var: var
+- val: let
+
 ## string
 ```
 var foo = "foo"
@@ -122,3 +130,44 @@ for (item in items) {
 ```
 
 ## class
+- 和java不同，可以在一个文件中定义多个class，而且不需要和文件名一样
+```
+fun main() {
+  var shape = Shape()
+  shape.hello()
+}
+
+class Shape {
+  val name:String?
+
+  constructor() {
+    this.name = "shape"
+  }
+
+  fun hello() {
+    println(this.name)
+  }
+}
+```
+
+## derived
+
+```
+open class Shape {
+  var name:String?
+
+  constructor() {
+    this.name = "shape"
+  }
+
+  fun hello() {
+    println(this.name)
+  }
+}
+
+class Square : Shape {
+  constructor() {
+    super.name = "square"
+  }
+}
+```
