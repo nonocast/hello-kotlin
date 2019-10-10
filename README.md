@@ -74,3 +74,51 @@ $ gradle init
 $ gradle run -q
 Hello world
 ```
+
+## minimal
+```
+package hello
+
+fun main() {
+    println("hello world")
+}
+```
+
+- package 和 java 一致，目录层级相同
+
+## function
+```
+fun foo() : String {
+  return "foo"
+}
+
+fun bar() = "bar"
+
+fun foobar(): String = "foobar"
+```
+返回值可以省略(omit)
+
+## var
+```
+val a: Int = 1  // immediate assignment
+val b = 2   // `Int` type is inferred
+val c: Int  // Type required when no initializer is provided
+c = 3       // deferred assignment
+```
+
+## string
+```
+var foo = "foo"
+val s1 = "foo is $foo and ${1+2}" 
+println(s1)
+```
+
+## array and loop
+```
+val items = listOf("apple", "banana", "kiwifruit")
+for (item in items) {
+    println(item)
+}
+```
+
+## class
