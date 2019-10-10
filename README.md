@@ -1,8 +1,6 @@
 前面看了一下swift 5, 顺便正好看一下kotlin
 
-Quick
-- [Basic Syntax - Kotlin Programming Language](https://kotlinlang.org/docs/reference/basic-syntax.html)
-- [Classes and Inheritance - Kotlin Programming Language](https://kotlinlang.org/docs/reference/classes.html)
+[Reference - Kotlin Programming Language](https://kotlinlang.org/docs/reference/)
 
 ## 安装
 ```
@@ -171,3 +169,5 @@ class Square : Shape {
   }
 }
 ```
+
+差不多先这样，感觉kotlin有点过分复杂，边用边熟悉。
